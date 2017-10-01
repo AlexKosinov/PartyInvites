@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace PartyInvites.Models
 {
@@ -11,8 +7,8 @@ namespace PartyInvites.Models
         [Required(ErrorMessage = "Пожалуйста, введите Ваше имя")]
         public string Name { get; set; }
 
-        [Required(ErrorMessage = "Пожалуйста, введите Ваш почтовый адрес")]
-        [RegularExpression(@".+\@.+\..+", ErrorMessage = "Пожалуйста, введите корректный адрес")]
+        [Required(ErrorMessage = "Пожалуйста, введите Ваш электронный адрес")]
+        [RegularExpression(@".+\@.+\..+", ErrorMessage = "Пожалуйста, введите правильный электронный адрес")]
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Пожалуйста, введите Ваш номер телефона")]
